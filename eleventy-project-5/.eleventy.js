@@ -1,4 +1,9 @@
 module.exports = function(eleventyConfig) {
+    // Copy image files to output
+    eleventyConfig.addPassthroughCopy("src/**/*.{jpg,jpeg,png,gif,svg}");
+    // Copy Assets folder to output
+    eleventyConfig.addPassthroughCopy("Assets");
+    
     return {
         dir: {
             input: 'src',
