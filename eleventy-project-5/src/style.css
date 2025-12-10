@@ -1,0 +1,23 @@
+:root {
+    background-color: darkslategray;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 6; }
+.div2 { grid-area: 2 / 2 / 4 / 5; }
+.div3 { grid-area: 4 / 2 / 5 / 5; }
+
+body {
+  background: #00366b;
+  background: radial-gradient(circle, rgba(0, 54, 107, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
